@@ -1,0 +1,76 @@
+---
+layout: default
+title: MN Ballroom Blast!
+base_url: './'
+---
+
+<div class=''>
+
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="logo">
+            <img src="{{ page.base_url }}img/logo-shine-light.png" alt="Minnesota Ballroom Blast">
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-8">
+          <p class="lead">Just like a dance competition, <strong>but</strong> instead of being judged, you receive a concise critique of your dancing written by experienced ballroom professionals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row comp-meta">
+      <div class='col-12 col-sm-6'>
+        <i class='icon-calendar'></i>
+        <h3>Happening:</h3>
+        <p>13 October 2013<br><small>(That's a Sunday.)</small></p>
+      </div>
+      <div class='col-12 col-sm-6'>
+        <i class='icon-map-marker'></i>
+        <h3>Here:</h3>
+        {% include address.html %}
+      </div>
+      <div class='col-12 col-sm-6'>
+        <i class='icon-question'></i>
+        <h3>Newcomer?</h3>
+        <p>New to Ballroom Competitions? Check out our <a href="{{ page.base_url }}guide">friendly guide</a>.</p>
+      </div>
+      <div class='col-12 col-sm-6'>
+        <i class='icon-thumbs-up-alt'></i>
+        <h3>Pumped for Blast?</h3>
+        <p>You'll probably love <a href="http://www.sotncomp.com">Star of the North</a> too.</p>
+      </div>
+    </div>
+    
+    <div class="row"><div class="col-12"><hr></div></div>
+
+    <div class='row get-involved push'>
+      <div class="col-12">
+        <h1 class='push'>Get Involved!</h1>
+      </div>
+      <div class="col-12 col-sm-6">
+        <a href='{{ page.base_url }}register' class='btn btn-huge btn-blue-bubble btn-block push'>Register</a>
+      </div>
+      <div class="col-12 col-sm-6">
+        <a href='{{ page.base_url }}spectate' class='btn btn-huge btn-blue-bubble btn-block'>Spectate</a>
+      </div>
+    </div>
+
+    {% include schedule.html %}
+    <div class="row">
+      <div class='col-12'> 
+        <h2>Here's What to Expect:</h2>
+        <p class='lead'>
+          All day, dancers perform in the format of a dance competition and receive feedback from experienced ballroom pros. There'll be fun dances, games, and giveaways throughout the day, as well as makeup and jewelry vendors to help participants look smashing.
+        </p>
+        <p class='lead'>
+          In the evening session, enjoy games, social dancing, spotlight dances, and performances by national championship-level dancers.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

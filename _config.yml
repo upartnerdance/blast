@@ -1,0 +1,10 @@
+name: 'MN Ballroom Blast'
+markdown: rdiscount
+stylus:
+  compress: true
+  path: ./css
+  use: nib
+permalink: pretty
+exclude: [
+  node_modules
+]

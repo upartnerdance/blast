@@ -9,3 +9,4 @@ git add -A
 git commit -m 'built site'
 rm -r /tmp/WORKING_BLAST_SITE
 git checkout master
+git push origin gh-pages

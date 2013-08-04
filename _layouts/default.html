@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ page.base_url }}css/bootstrap.css">
+  <link rel="stylesheet" href="{{ page.base_url }}css/font-awesome.css">
+  <link rel="stylesheet" href="{{ page.base_url }}css/all.css">
+
+</head>
+<body>
+
+  <div class="navbar navbar-static-top">
+    <div class="container">
+      <a class="navbar-brand" href='{{ page.base_url }}'>{{ site.name }}</a>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="nav-collapse collapse navbar-responsive-collapse">
+        <ul class='nav navbar-nav pull-right'>
+          <li{% if page.slug == "register" %} class="active"{% endif %}>
+            <a href="{{ page.base_url }}register">Register</a>
+          </li>
+          <li{% if page.slug == "spectate" %} class="active"{% endif %}>
+            <a href="{{ page.base_url }}spectate">Spectate</a>
+          </li>
+          <li{% if page.slug == "guide" %} class="active"{% endif %}>
+            <a href="{{ page.base_url }}guide">Newcomer's Guide</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="wrapper">
+    {{ content }}
+  </div>
+  
+  <div class="mission">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Minnesota Ballroom Blast is</h2>
+          <p class='lead'>low-stress, feedback-based, and designed to:</p>
+          <hr>
+          <ul class='icons-ul lead'>
+            <li><i class='icon-li icon-ok-circle'></i>Provide social dancers and competitors alike with meaningful feedback from professionals they might not otherwise have access to</li>
+            <li><i class='icon-li icon-ok-circle'></i>Introduce beginners to the general format of a competition in a low-chaos environment</li>
+            <li><i class='icon-li icon-ok-circle'></i>Provide a preparatory event for those looking to compete</li>
+            <li><i class='icon-li icon-ok-circle'></i>Allow couples to experiment with new choreography and costuming</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h3>Questions? Contact Us.</h3>
+          <p>If you have any questions or need any assistance, please e-mail us at <a href='mailto:blast@usadance-mn.org'>blast@usadance-mn.org</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ page.base_url }}js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="{{ page.base_url }}js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

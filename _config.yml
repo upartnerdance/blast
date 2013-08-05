@@ -6,5 +6,7 @@ stylus:
   use: nib
 permalink: pretty
 exclude: [
-  node_modules
+  node_modules,
+  'blast.sublime-project',
+  'blast.sublime-workspace'
 ]

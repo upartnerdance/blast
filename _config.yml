@@ -1,5 +1,4 @@
 name: 'MN Ballroom Blast'
-markdown: rdiscount
 stylus:
   compress: true
   path: ./css
